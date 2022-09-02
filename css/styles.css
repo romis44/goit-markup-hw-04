@@ -24,6 +24,7 @@
   --main-bg-cl: #ffffff;
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
+  --icon-bg-cl:rgba(255, 255, 255, 0.1);
 
   /* Others */
 }
@@ -160,7 +161,7 @@ img {
 }
 
 .contacts-icon{
-  fill:none;
+  fill:currentColor;
   stroke: var(--grey-txt-cl);
 }
 
@@ -264,17 +265,6 @@ img {
   width: 270px;
 }
 
-.hero-item::before{
-  display: block;
-  content: '';
-  outline: 1px solid red;
-  height: 120px;
-  background-image: url(../images/icons/icons.svg#icon-antenna);
-  background-size: contain;
-  background-position: center;
-  background-color: #F5F4FA;
-
-}
 
 .hero-caption {
   margin-bottom: 10px;
@@ -290,6 +280,18 @@ img {
   line-height: calc(24 / 14);
   color: var(--grey-txt-cl);
 }
+
+.about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #ECECEC;
+  height: 120px;
+  
+}
+
+
 
 /* НАША РОБОТА */
 
@@ -453,9 +455,31 @@ font-size: 14px;
 line-height: calc(16 / 14);
 text-transform: uppercase;
 color: var(--light-txt-cl);
-padding-left: 516px;
 }
 
+.container-footer{
+  display: flex;
+  align-items:baseline;
+}
+
+.group{
+  margin-right: 70px;
+}
+
+.footer-spitch{
+  padding-bottom: 20px;
+}
+
+.dark-icon{
+  background-color:var(--icon-bg-cl);
+  color: var(--main-bg-cl);
+
+}
+
+.dark-icon:hover,
+.dark-icon:focus{
+background-color: var(--accent-bg-cl);
+}
 
 /*PORTFOLIO-BUTTONS */
 
@@ -523,3 +547,10 @@ padding-left: 516px;
 .section{
   padding: 94px 0;
 }
+
+
+.card:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
