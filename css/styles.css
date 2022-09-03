@@ -432,14 +432,13 @@ justify-content: center;
   
 .customers-icon:hover,
 .customers-icon:focus{
-  /* border: 1px solid #188CE8; */
-  fill: #188CE8;
+  fill: var(--accent-bg-cl);
 }
 
 
 .customers-item:hover,
 .customers-item:focus{
-border: 1px solid #188CE8;
+border: 1px solid var(--accent-bg-cl);
 }
 
 /* НАШІ КОНТАКТИ */
