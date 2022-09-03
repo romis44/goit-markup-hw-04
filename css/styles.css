@@ -25,6 +25,7 @@
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
   --icon-bg-cl:rgba(255, 255, 255, 0.1);
+  --cust-bg-cl:#f5f5f5;
 
   /* Others */
 }
@@ -65,7 +66,8 @@ img {
 .content-list,
 .section-list,
 .portfolio-list,
-.socials-list {
+.socials-list,
+.customers-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -390,6 +392,55 @@ justify-content: center;
     fill: currentColor;
   }
 
+
+/* НАШІ КЛІЄНТИ */
+
+.customers-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+  
+
+}
+
+.customers-title{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--main-txt-cl);
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.customers-item{
+  display: flex;
+  width: 170px;
+  height: 92px;
+  background-color: var(--cust-bg-cl);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-icn-fill);
+  border-radius: 4px;
+}
+
+.customers-icon{
+  fill:var(--main-icn-fill);
+}
+  
+.customers-icon:hover,
+.customers-icon:focus{
+  /* border: 1px solid #188CE8; */
+  fill: #188CE8;
+}
+
+
+.customers-item:hover,
+.customers-item:focus{
+border: 1px solid #188CE8;
+}
 
 /* НАШІ КОНТАКТИ */
 
