@@ -67,7 +67,7 @@ img {
 .section-list,
 .portfolio-list,
 .socials-list,
-.customers-list {
+.customers-list{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -348,7 +348,7 @@ justify-content: center;
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--grey-txt-cl);
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .section-team-list {
@@ -395,13 +395,14 @@ justify-content: center;
 
 /* НАШІ КЛІЄНТИ */
 
+.customers{
+  padding: 94px 0;
+}
+
 .customers-list{
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
-  
-
 }
 
 .customers-title{
@@ -411,20 +412,21 @@ justify-content: center;
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--main-txt-cl);
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
-.customers-item{
+
+.customers-link{
   display: flex;
-  width: 170px;
-  height: 92px;
-  background-color: var(--cust-bg-cl);
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--main-icn-fill);
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+
 }
+
 
 .customers-icon{
   fill:var(--main-icn-fill);
@@ -436,9 +438,8 @@ justify-content: center;
 }
 
 
-.customers-item:hover,
-.customers-item:focus{
-border: 1px solid var(--accent-bg-cl);
+.customers-link:hover{
+  border: 1px solid var(--accent-bg-cl);
 }
 
 /* НАШІ КОНТАКТИ */
@@ -506,6 +507,7 @@ font-size: 14px;
 line-height: calc(16 / 14);
 text-transform: uppercase;
 color: var(--light-txt-cl);
+margin-bottom: 20px;
 }
 
 .container-footer{
@@ -517,9 +519,6 @@ color: var(--light-txt-cl);
   margin-right: 70px;
 }
 
-.footer-spitch{
-  padding-bottom: 20px;
-}
 
 .dark-icon{
   background-color:var(--icon-bg-cl);
@@ -600,8 +599,14 @@ background-color: var(--accent-bg-cl);
 }
 
 
-.card:hover{
+.card:hover,
+.card:focus
+{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 
+
+.card{
+  display:block;
+  text-decoration: none;
+}
